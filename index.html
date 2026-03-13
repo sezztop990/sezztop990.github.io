@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yanrevise | Bio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Иконки FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Стартовый экран -->
+    <div id="enter-screen">
+        <p>click to enter...</p>
+    </div>
+
+    <!-- Основной контент -->
+    <div id="main-content" class="hidden">
+        
+        <!-- Кнопка звука -->
+        <button id="audio-toggle">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+
+        <!-- Фоновая музыка -->
+        <audio id="bg-music" loop>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="profile-container">
+            <!-- Главная аватарка -->
+            <img src="avatar.png" alt="Avatar" class="main-avatar">
+            
+            <h1 class="glow-text">sezztop990</h1>
+            
+            <p class="bio">sezzovich</p>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> home</p>
+
+            <!-- ДИНАМИЧЕСКИЙ ВИДЖЕТ DISCORD -->
+            <div class="status-widget" id="discord-widget">
+                <div class="status-avatar-container">
+                    <img id="dc-avatar" src="avatar.jpg" alt="Discord Avatar">
+                    <div id="dc-status-indicator" class="status-indicator offline"></div>
+                </div>
+                
+                <div class="status-info">
+                    <h3 id="dc-username">Loading...</h3>
+                    <p id="dc-activity">Подключение к Discord...</p>
+                    <span id="dc-details"></span>
+                </div>
+
+                <!-- Динамическая картинка (Обложка Spotify или Иконка игры) -->
+                <div class="status-icon-dynamic" id="dc-icon-container" style="display: none;">
+                    <img id="dc-activity-icon" src="" alt="Activity Icon">
+                </div>
+            </div>
+
+            <!-- Социальные сети (Вставь свои ссылки вместо #) -->
+            <div class="socials">
+
+                <a href="https://steamcommunity.com/profiles/76561199384975585/" target="_blank"><i class="fa-brands fa-steam"></i></a>
+
+            </div>
+            
+            <!-- Просмотры -->
+            <div class="views">
+                <i class="fa-solid fa-eye"></i> <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fyanrevise.github.io&count_bg=%2300000000&title_bg=%2300000000&icon=&icon_color=%23E7E7E7&title=views&edge_flat=true" alt="Views">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
